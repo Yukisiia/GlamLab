@@ -1,0 +1,302 @@
+/* Podstawowe ustawienia i czcionki */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    color: #323232;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Pasek postępu scrolla */
+  #progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #ff69b4;
+    width: 0;
+    z-index: 200;
+  }
+  
+  /* Wykwintne nagłówki */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a63480;
+  }
+  
+  /* Nagłówek z parallax i jasnym różowym tłem */
+  header {
+    background-color: #ffc0cb; /* Jasny różowy */
+    background-image: url('header-bg.jpg'); /* Podmień na własny obrazek lub usuń, jeśli nie potrzebujesz */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 60px 20px;
+    color: white;
+  }
+  .header-overlay {
+    background: rgba(248, 67, 206, 0.4);
+    padding: 40px 20px;
+  }
+  
+  /* Dekoracyjne elementy po bokach (podmień 'decor-left.png' i 'decor-right.png' na swoje ozdoby) */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: url('decor-left.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 50;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url('decor-right.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 50;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  /* Sticky nawigacja */
+  nav {
+    background: #ff69b4;
+    position: sticky;
+    top: 0;
+    z-index: 150;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Dekoracyjne sekcje */
+  .section-decor {
+    border-top: 3px solid #ffb6c1;
+    border-bottom: 3px solid #ffb6c1;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  /* Sekcje */
+  section {
+    padding: 60px 20px;
+  }
+  
+  /* Usługi */
+  .usluga {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .usluga:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Cennik */
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  table, th, td {
+    border: 1px solid #f8479f;
+  }
+  th, td {
+    padding: 12px;
+  }
+  th {
+    background-color: #ffb6c1;
+    color: white;
+  }
+  
+ /* Slider - płynna, ciągła animacja z większymi odstępami między zdjęciami */
+.slider {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+  }
+  .slide-track {
+    display: flex;
+    width: calc(200px * 8 * 2); /* 16 slajdów (8 unikalnych, powtórzone 2 razy) */
+    animation: scroll 30s linear infinite;
+  }
+  .slide {
+    width: 200px;
+    flex-shrink: 0;
+    padding: 0 20px; /* Zwiększony odstęp między zdjęciami (20px po obu stronach) */
+  }
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .slide img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  
+  /* Opinie */
+  #opinie .testimonial-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    min-height: 100px;
+  }
+  .testimonial {
+    font-style: italic;
+    color: #555;
+    display: none;
+    animation: fadeTestimonial 1s ease-in-out;
+  }
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c71585;
+  }
+  @keyframes fadeTestimonial {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Mapka lokalizacji */
+  .map-container {
+    margin: auto;
+    max-width: 600px;
+    border: 3px solid #ffb6c1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Formularz kontaktowy */
+  form {
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #e85aa3;
+  }
+  
+  /* Stopka */
+  footer {
+    background: #ffb6c1;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  /* Przycisk "Do góry" */
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s;
+  }
+  #backToTop:hover {
+    background-color: #e85aa3;
+  }
+  
+  /* Efekt fade-in przy scrollowaniu */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .left-bottom-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    z-index: 100;
+  }
+  
+  .left-bottom-image img {
+    width: 100px; /* Szerokość obrazka */
+    height: auto;
+  }
+  

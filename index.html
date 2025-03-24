@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam Lab - Makijaż, Włosy, Paznokcie</title>
+  <!-- Wykwintne czcionki -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-bottom-image">
+        <img src="hello kitty.png" alt="Opis obrazka">
+      </div>
+      
+  <!-- Pasek postępu scrolla -->
+  <div id="progressBar"></div>
+  
+  <!-- Nagłówek z parallax background, jasny różowy -->
+  <header>
+    <div class="header-overlay">
+      <div class="logo-container">
+        <!-- Wklej tutaj swoje logo (np. logo.png) -->
+        <img src="logo.png" alt="Logo Glam Lab" class="logo">
+        <h1>Glam Lab</h1>
+      </div>
+      <p>Profesjonalne usługi makijażu, stylizacji włosów i paznokci</p>
+    </div>
+  </header>
+
+  <!-- Nawigacja (sticky) -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#cennik">Cennik</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#lokalizacja">Lokalizacja</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sekcja oferty -->
+  <section id="oferta" class="fade-in section-decor">
+    <h2>Nasza oferta</h2>
+    <div class="usluga">
+      <h3>Makijaż</h3>
+      <p>Makijaż dzienny, ślubny, wieczorowy.</p>
+    </div>
+    <div class="usluga">
+      <h3>Stylizacja włosów</h3>
+      <p>Fryzury okolicznościowe, upięcia, loki.</p>
+    </div>
+    <div class="usluga">
+      <h3>Manicure &amp; Paznokcie</h3>
+      <p>Hybrydy, żele, zdobienia.</p>
+    </div>
+    <div class="usluga">
+      <h3>Dobór Sukni</h3>
+      <p>Na studniówkę, ślub.</p>
+    </div>
+  </section>
+
+  <!-- Sekcja cennika -->
+  <section id="cennik" class="fade-in section-decor">
+    <h2>Cennik</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Usługa</th>
+          <th>Cena (PLN)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Makijaż dzienny</td>
+          <td>150 - 200 zł</td>
+        </tr>
+        <tr>
+          <td>Makijaż ślubny</td>
+          <td>300 - 500 zł</td>
+        </tr>
+        <tr>
+          <td>Stylizacja włosów</td>
+          <td>150 - 250 zł</td>
+        </tr>
+        <tr>
+          <td>Manicure hybrydowy</td>
+          <td>100 - 150 zł</td>
+        </tr>
+        <tr>
+          <td>Paznokcie żelowe</td>
+          <td>150 - 250 zł</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Sekcja galerii z płynnym sliderem -->
+  <section id="galeria" class="fade-in section-decor">
+    <h2>Galeria</h2>
+    <div class="slider">
+      <div class="slide-track">
+        <!-- Upewnij się, że masz wystarczającą liczbę obrazków (unikalne + powtórzone) -->
+        <div class="slide"><img src="cale.jpg" alt="Makijaż"></div>
+        <div class="slide"><img src="wos.jpg" alt="Stylizacja włosów"></div>
+        <div class="slide"><img src="paznokc.jpg" alt="Manicure"></div>
+        <div class="slide"><img src="Ok.jpg" alt="Makijaż ślubny"></div>
+        <!-- Powtórzenie zestawu dla ciągłości slidera -->
+        <div class="slide"><img src="cale.jpg" alt="Makijaż"></div>
+        <div class="slide"><img src="wos.jpg" alt="Stylizacja włosów"></div>
+        <div class="slide"><img src="paznokc.jpg" alt="Manicure"></div>
+        <div class="slide"><img src="Ok.jpg" alt="Makijaż ślubny"></div>
+        <div class="slide"><img src="cale.jpg" alt="Makijaż"></div>
+        <div class="slide"><img src="wos.jpg" alt="Stylizacja włosów"></div>
+        <div class="slide"><img src="paznokc.jpg" alt="Manicure"></div>
+        <div class="slide"><img src="Ok.jpg" alt="Makijaż ślubny"></div>
+        <div class="slide"><img src="cale.jpg" alt="Makijaż"></div>
+        <div class="slide"><img src="wos.jpg" alt="Stylizacja włosów"></div>
+        <div class="slide"><img src="paznokc.jpg" alt="Manicure"></div>
+        <div class="slide"><img src="Ok.jpg" alt="Makijaż ślubny"></div>
+        <div class="slide"><img src="cale.jpg" alt="Makijaż"></div>
+        <div class="slide"><img src="wos.jpg" alt="Stylizacja włosów"></div>
+        <div class="slide"><img src="paznokc.jpg" alt="Manicure"></div>
+        <div class="slide"><img src="Ok.jpg" alt="Makijaż ślubny"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja opinii -->
+  <section id="opinie" class="fade-in section-decor">
+    <h2>Opinie naszych klientek</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <p>"Glam Lab to prawdziwa magia! Mój makijaż ślubny był oszałamiający."</p>
+        <span>- Anna K.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Profesjonalizm i elegancja. Polecam każdej kobiecie!"</p>
+        <span>- Marta P.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Zawsze czuję się wyjątkowo po wizycie w Glam Lab."</p>
+        <span>- Ewa Z.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Pięknie. Po prostu pięknie."</p>
+        <span>- Julia H.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja lokalizacji -->
+  <section id="lokalizacja" class="fade-in section-decor">
+    <h2>Lokalizacja</h2>
+    <p>Znajdź nasz salon w centrum miasta!</p>
+    <!-- Osadzenie mapy Google – podmień URL na właściwy kod embed -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1247.1138303963007!2d17.056926334373475!3d51.306935715027805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1742841758114!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Sekcja kontaktu -->
+  <section id="kontakt" class="fade-in section-decor">
+    <h2>Kontakt</h2>
+    <form>
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <!-- Przycisk "Do góry" -->
+  <button id="backToTop" title="Do góry">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Glam Lab - Wszystkie prawa zastrzeżone</p>
+  </footer>
+
+  <!-- Skrypty -->
+  <script>
+    // Smooth scroll dla linków z menu
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Przycisk "Do góry" oraz pasek postępu
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+      
+      backToTop.style.display = winScroll > 300 ? "block" : "none";
+    };
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Efekt fade-in przy scrollowaniu
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    // Slider opinii (automatyczna zmiana cytatów)
+    let testimonialIndex = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    setInterval(() => {
+      testimonials.forEach((el, i) => {
+        el.style.display = (i === testimonialIndex) ? 'block' : 'none';
+      });
+      testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    }, 4000);
+
+  </script>
+</body>
+</html>
