@@ -287,16 +287,5 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-  .left-bottom-image {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 10px;
-    z-index: 100;
-  }
-  
-  .left-bottom-image img {
-    width: 100px; /* Szerokość obrazka */
-    height: auto;
-  }
+
   
